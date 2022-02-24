@@ -18,19 +18,19 @@ rollbar.log('Hello world!')
 app.get(`/`, (req,res) => {
     res.sendFile(path.join(__dirname, '../public/main.html'))
 })
-app.get('http://localhost:5500/api/critical', (req,res) => {
+app.get('/api/critical', (req,res) => {
     res.status(200).send(`Critical sent to rollbar`)
     rollbar.critical('rollbar critical sent')
 })
-app.get('http://localhost:5500/api/error', (req,res) => {
+app.get('/api/error', (req,res) => {
     res.status(200).send(`error sent to rollbar`)
     rollbar.error('rollbar error sent')
 })
-app.get('http://localhost:5500/api/info', (req,res) => {
+app.get('/api/info', (req,res) => {
     res.status(200).send(`info sent to rollbar`)
     rollbar.info('this should work for info')
 })
-app.get('http://localhost:5500/api/warning', (req,res) => {
+app.get('/api/warning', (req,res) => {
     res.status(200).send(`warning sent to rollbar`)
     rollbar.warning('this is my warning')
 })
