@@ -16,6 +16,23 @@ h1 {
 #steve {
     display:flex;
     width: 80vw;
-    height: 50vh;
+    height: 45vh;
     justify-content: center;
+}
+
+#buttons {
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    
+}
+
+button {
+    background-color: #30A5F2;
+    
+}
+
+button:hover {
+    background-color: aliceblue;
+
 }
