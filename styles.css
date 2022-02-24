@@ -1,3 +1,21 @@
+body {
+    background-color: #B7DDF7;
+}
+
 h1 {
+    display: flex;
     color:blue;
+    justify-content: center;
+}
+#stevepic{
+    display: flex;
+    justify-content: center;
+}
+
+
+#steve {
+    display:flex;
+    width: 80vw;
+    height: 50vh;
+    justify-content: center;
 }
