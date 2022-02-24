@@ -11,7 +11,7 @@ const rollbar = new Rollbar({
   captureUnhandledRejections: true,
 })
 
-```// record a generic message and send it to Rollbar```
+// record a generic message and send it to Rollbar
 rollbar.log('Hello world!')
 
 //GET ENDPOINTS
@@ -34,7 +34,7 @@ app.get('/api/warning', (req,res) => {
     res.status(200).send(`warning sent to rollbar`)
     rollbar.warning('this is my warning')
 })
-app.get('/js', (req, res) => {
+app.get('/index.js', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.js'))
 })
 app.get('/styles.css', (req,res) => {
