@@ -1,3 +1,5 @@
+console.log(`Javascript linked successfully!`)
+
 
 function sendCritical(){
     console.log('Sent Critical')
